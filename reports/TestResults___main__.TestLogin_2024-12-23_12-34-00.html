@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-12-23 12:34:00</p>
+                <p class='attribute'><strong>Duration: </strong>3.14 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestLogin</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_login_valido_1_test_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='username']"}
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6643B6CF5+28821]
+	(No symbol) [0x00007FF664323880]
+	(No symbol) [0x00007FF6641C578A]
+	(No symbol) [0x00007FF6642191BE]
+	(No symbol) [0x00007FF6642194AC]
+	(No symbol) [0x00007FF664262647]
+	(No symbol) [0x00007FF66423F33F]
+	(No symbol) [0x00007FF66425F412]
+	(No symbol) [0x00007FF66423F0A3]
+	(No symbol) [0x00007FF66420A778]
+	(No symbol) [0x00007FF66420B8E1]
+	GetHandleVerifier [0x00007FF6646EFCED+3408013]
+	GetHandleVerifier [0x00007FF66470745F+3504127]
+	GetHandleVerifier [0x00007FF6646FB63D+3455453]
+	GetHandleVerifier [0x00007FF66447BDFB+835995]
+	(No symbol) [0x00007FF66432EB9F]
+	(No symbol) [0x00007FF66432A854]
+	(No symbol) [0x00007FF66432A9ED]
+	(No symbol) [0x00007FF66431A1D9]
+	BaseThreadInitThunk [0x00007FFFD060259D+29]
+	RtlUserThreadStart [0x00007FFFD172AF38+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Users\Dennys\Documents\proyectos_programacion\Testing_QA\TutorialSeleniumPOM\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Dennys\Documents\proyectos_programacion\Testing_QA\TutorialSeleniumPOM\test_cases\test_login.py", line 31, in test_login_valido
+    self.login_page.login_in_app(username=username, password=password)
+  File "D:\Users\Dennys\Documents\proyectos_programacion\Testing_QA\TutorialSeleniumPOM\page_objects\login_page.py", line 17, in login_in_app
+    username_input = self.driver.find_element(By.XPATH, f"//input[@placeholder='{self.USERNAME_INPUT}']")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Dennys\Documents\proyectos_programacion\Testing_QA\TutorialSeleniumPOM\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Dennys\Documents\proyectos_programacion\Testing_QA\TutorialSeleniumPOM\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "D:\Users\Dennys\Documents\proyectos_programacion\Testing_QA\TutorialSeleniumPOM\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='username']"}
+  (Session info: chrome=131.0.6778.205); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6643B6CF5+28821]
+	(No symbol) [0x00007FF664323880]
+	(No symbol) [0x00007FF6641C578A]
+	(No symbol) [0x00007FF6642191BE]
+	(No symbol) [0x00007FF6642194AC]
+	(No symbol) [0x00007FF664262647]
+	(No symbol) [0x00007FF66423F33F]
+	(No symbol) [0x00007FF66425F412]
+	(No symbol) [0x00007FF66423F0A3]
+	(No symbol) [0x00007FF66420A778]
+	(No symbol) [0x00007FF66420B8E1]
+	GetHandleVerifier [0x00007FF6646EFCED+3408013]
+	GetHandleVerifier [0x00007FF66470745F+3504127]
+	GetHandleVerifier [0x00007FF6646FB63D+3455453]
+	GetHandleVerifier [0x00007FF66447BDFB+835995]
+	(No symbol) [0x00007FF66432EB9F]
+	(No symbol) [0x00007FF66432A854]
+	(No symbol) [0x00007FF66432A9ED]
+	(No symbol) [0x00007FF66431A1D9]
+	BaseThreadInitThunk [0x00007FFFD060259D+29]
+	RtlUserThreadStart [0x00007FFFD172AF38+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 3.14 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
